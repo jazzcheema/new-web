@@ -15,6 +15,7 @@ const config: Config = {
       animation: {
         'flash-pulse': 'flashPulse 2s infinite',
         'slow-glow': 'slow-glow 5s ease-in-out infinite',
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         flashPulse: {
@@ -32,9 +33,20 @@ const config: Config = {
             textShadow: '0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2)',
           },
         },
+        spotlight: {
+          "0%": {
+            opacity: '0',
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: '1',
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

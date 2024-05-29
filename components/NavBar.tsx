@@ -39,13 +39,13 @@ function Navbar({ className }: { className?: string }) {
             />
             <ProductItem
               title="Shakespeare's Sonnet #18"
-              href="#"
+              href="/shakespeare"
               src="/shakespeare.png"
               description="Shakespeare's Sonnet #18"
             />
             <ProductItem
               title="Shakespeare's Sonnet #18"
-              href="#"
+              href="/shakespeare"
               src="/shakespeare.png"
               description="Shakespeare's Sonnet #18"
             />
@@ -55,7 +55,7 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Info">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about">About</HoveredLink>
-            <HoveredLink href="#">Contact</HoveredLink>
+            <HoveredLink href="/contact">Contact</HoveredLink>
             <HoveredLink href="https://www.tevacheema.com/">Film</HoveredLink>
           </div>
         </MenuItem>

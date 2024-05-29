@@ -2,6 +2,7 @@ import { SparklesCore } from "@/components/ui/Sparkles";
 import Link from "next/link";
 import ThreeButton from "@/components/ui/ThreeButton";
 
+
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
@@ -17,7 +18,7 @@ export default function Home() {
         />
       </div>
       <div className="relative z-10 flex flex-col items-center text-center">
-        <div className="text-4xl md:text-5xl lg:text-6xl">
+        <div className="text-4xl md:text-5xl lg:text-6xl font-digital2">
           Jazz Cheema
           <br />
         </div>

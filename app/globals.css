@@ -47,6 +47,25 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DigitalFont1';
+  src: url('/fonts/ASThermalRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DigitalFont2';
+  src: url('/fonts/ASThermalXXWideRegular.otf') format('opentype');
+}
+
+
 html {
   font-family: "MyFont", sans-serif;
+}
+
+.font-digital1 {
+  font-family: 'DigitalFont1', sans-serif;
+}
+
+.font-digital2 {
+  font-family: 'DigitalFont2', sans-serif;
 }

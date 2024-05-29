@@ -11,7 +11,7 @@ const Page = () => {
         <NavbarDemo/>
         </div>
       <header className="text-center">
-        <h1 className="text-4xl font-bold animate-slow-glow">filmmaker turned software engineer.</h1>
+        <h1 className="text-4xl font-bold animate-slow-glow font-digital1">filmmaker turned software engineer.</h1>
         <div className="relative w-full flex justify-center mt-1">
           <div className="relative w-full h-40 mask-container">
             <SparklesCore
