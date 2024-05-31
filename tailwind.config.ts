@@ -16,6 +16,7 @@ const config: Config = {
         'flash-pulse': 'flashPulse 2s infinite',
         'slow-glow': 'slow-glow 5s ease-in-out infinite',
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        fadeIn: 'fadeIn 2s ease-in-out forwards',
       },
       keyframes: {
         flashPulse: {
@@ -43,7 +44,33 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
+      mixBlendMode: {
+        overlay: 'overlay',
+        multiply: 'multiply',
+        screen: 'screen',
+        darken: 'darken',
+        lighten: 'lighten',
+        colorDodge: 'color-dodge',
+        colorBurn: 'color-burn',
+        hardLight: 'hard-light',
+        softLight: 'soft-light',
+        difference: 'difference',
+        exclusion: 'exclusion',
+        hue: 'hue',
+        saturation: 'saturation',
+        color: 'color',
+        luminosity: 'luminosity',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      mixBlendMode: ['hover', 'focus'],
     },
   },
   plugins: [],

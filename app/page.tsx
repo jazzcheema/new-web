@@ -1,35 +1,74 @@
-import { SparklesCore } from "@/components/ui/Sparkles";
-import Link from "next/link";
-import ThreeButton from "@/components/ui/ThreeButton";
+'use client';
 
+import { useRouter } from 'next/navigation';
+import { useGlobalAudio } from '@/components/GlobalAudio';
+import { useEffect, useState } from 'react';
+import { Vortex } from '@/components/ui/Vortex';
 
-export default function Home() {
+/**
+ * Landing page -> loads sound and graphics.
+ */
+
+const LandingPage = () => {
+  const router = useRouter();
+  const { playAudio } = useGlobalAudio();
+  const [showButtonArea, setShowButtonArea] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowButtonArea(true);
+      setShowVideo(false);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const handleButtonClick = () => {
+    playAudio();
+    router.push('/start');
+  };
+
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-      <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={15}
+    <div className="relative flex items-center justify-center h-screen bg-black">
+      {showVideo && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <video
+            autoPlay
+            muted
+            className="w-full h-full object-cover mix-blend-difference"
+          >
+            <source src="/FULL_CODE_02.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
+        <Vortex
+          backgroundColor="black"
+          rangeY={800}
+          particleCount={500}
+          baseHue={120}
           className="w-full h-full"
-          particleColor="#FFFFFF"
         />
       </div>
-      <div className="relative z-10 flex flex-col items-center text-center">
-        <div className="text-4xl md:text-5xl lg:text-6xl font-digital2">
-          Jazz Cheema
-          <br />
+      {showButtonArea && (
+        <div
+          className={`relative z-10 text-center border-4 border-white p-8 bg-opacity-70 bg-black transition-opacity duration-1000 ${
+            showButtonArea ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <p className="text-white text-xl mb-6">Click start to begin</p>
+          <button
+            className="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300"
+            onClick={handleButtonClick}
+          >
+            START
+          </button>
         </div>
-        <p className="font-light text-xl md:text-2xl lg:text-3xl animate-flash-pulse">
-          Software Engineer
-        </p>
-
-        <Link href="/about">
-          <ThreeButton onClick={<></>} />
-        </Link>
-      </div>
-    </main>
+      )}
+    </div>
   );
-}
+};
+
+export default LandingPage;

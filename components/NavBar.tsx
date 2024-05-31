@@ -22,29 +22,17 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <Link href="/" className="text-black">Home</Link>
+        <Link href="/start" className="text-black">Home</Link>
         <MenuItem setActive={setActive} active={active} item="Projects">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="You Wish"
+              title="YouWish"
               href="#"
               src="/you-wish-genie.png"
               description="Make 3 wishes to a Youtube API before getting blocked"
             />
             <ProductItem
-              title="Trivia"
-              href="#"
-              src="/trivia.png"
-              description="Trivia game to play with your friends"
-            />
-            <ProductItem
-              title="Shakespeare's Sonnet #18"
-              href="/shakespeare"
-              src="/shakespeare.png"
-              description="Shakespeare's Sonnet #18"
-            />
-            <ProductItem
-              title="Shakespeare's Sonnet #18"
+              title="Sonnet #18"
               href="/shakespeare"
               src="/shakespeare.png"
               description="Shakespeare's Sonnet #18"
