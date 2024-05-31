@@ -29,7 +29,7 @@ function Navbar({ className }: { className?: string }) {
               title="YouWish"
               href="#"
               src="/you-wish-genie.png"
-              description="Make 3 wishes to a Youtube API before getting blocked"
+              description="Make 3 wishes to a Youtube API before getting blocked. **This action will stop current audio & redirect"
             />
             <ProductItem
               title="Sonnet #18"

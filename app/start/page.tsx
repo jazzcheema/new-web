@@ -1,11 +1,11 @@
 import { SparklesCore } from "@/components/ui/Sparkles";
 import Link from "next/link";
 import ThreeButton from "@/components/ui/ThreeButton";
+import ThreeReloadButton from "@/components/ui/ThreeReloadButton";
 
 /**
  * Homepage (start) component
  */
-
 
 export default function Home() {
   return (
@@ -22,17 +22,17 @@ export default function Home() {
         />
       </div>
       <div className="relative z-10 flex flex-col items-center text-center">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-digital2 animate-fadeIn">
-        Jazz Cheema
-        <br />
-      </div>
+        <div className="text-4xl md:text-5xl lg:text-6xl font-digital2 animate-fadeIn">
+          Jazz Cheema
+          <br />
+        </div>
         <p className="font-light text-xl md:text-2xl lg:text-3xl animate-flash-pulse">
           Software Engineer
         </p>
-
         <Link href="/about">
           <ThreeButton onClick={<></>} />
         </Link>
+        <ThreeReloadButton />
       </div>
     </main>
   );
