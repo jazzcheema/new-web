@@ -63,7 +63,7 @@ const Sonnet18 = () => {
           </a>
           &nbsp; Wikipedia article for more information
         </p>
-        <div className="flex items-center justify-center mt-6">
+        <div className="flex items-center justify-center mt-6 pb-2">
           <button
             onClick={handleReturn}
             className="bg-gray-800 hover:bg-gray-700 text-white font-custom py-2 px-4 rounded"

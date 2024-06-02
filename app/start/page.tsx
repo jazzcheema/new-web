@@ -21,8 +21,8 @@ export default function Home() {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="relative z-10 flex flex-col items-center text-center">
-        <div className="text-4xl md:text-5xl lg:text-6xl font-digital2 animate-fadeIn">
+      <div className="relative z-10 flex flex-col items-center text-center pt-12">
+        <div className="text-4xl md:text-4xl lg:text-5xl font-digital2 animate-fadeIn">
           Jazz Cheema
           <br />
         </div>
