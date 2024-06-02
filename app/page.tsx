@@ -19,7 +19,7 @@ const LandingPage = () => {
     const timeout = setTimeout(() => {
       setShowButtonArea(true);
       setShowVideo(false);
-    }, 1500);
+    }, 1200);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -43,15 +43,17 @@ const LandingPage = () => {
           </video>
         </div>
       )}
-      <div className="absolute inset-0 flex items-center justify-center z-0">
-        <Vortex
-          backgroundColor="black"
-          rangeY={800}
-          particleCount={500}
-          baseHue={120}
-          className="w-full h-full"
-        />
-      </div>
+      {showButtonArea && (
+        <div className="absolute inset-0 flex items-center justify-center z-0">
+          <Vortex
+            backgroundColor="black"
+            rangeY={800}
+            particleCount={500}
+            baseHue={120}
+            className="w-full h-full"
+          />
+        </div>
+      )}
       {showButtonArea && (
         <div
           className={`relative z-10 text-center border-4 border-white p-8 bg-opacity-70 bg-black transition-opacity duration-1000 ${
