@@ -7,7 +7,7 @@ import Link from "next/link";
 /**
  * Implemented Navbar component.
  *
- * 
+ *
  */
 
 export function NavbarDemo() {
@@ -40,7 +40,7 @@ function Navbar({ className }: { className?: string }) {
               title="Sonnet #18"
               href="/shakespeare"
               src="/shakespeare.png"
-              description="Shakespeare's Sonnet #18"
+              description="Shakespeare&apos;s Sonnet #18"
             />
 
           </div>

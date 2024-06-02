@@ -40,13 +40,13 @@ const Page = () => {
         <div className="flex-1 p-4">
           <h2 className="text-lg font-light mb-4">why programming?</h2>
           <p>
-            programming feels immediate & concrete, and has direct effect in the world. I'm attracted to working on impactful projects that stimulate the user and encourage creative spirit. <br /><br />I love having the ability to deeply understand, manipulate, and create systems of technologies that we are able to use in our everyday lives.
+            programming feels immediate & concrete, and has direct effect in the world. I&apos;m attracted to working on impactful projects that stimulate the user and encourage creative spirit. <br /><br />I love having the ability to deeply understand, manipulate, and create systems of technologies that we are able to use in our everyday lives.
           </p>
         </div>
         <div className="flex-1 p-4">
-          <h2 className="text-lg font-light mb-4">what I'm looking for?</h2>
+          <h2 className="text-lg font-light mb-4">what I&apos;m looking for?</h2>
           <p>
-            I'm most interested in working on meaningful projects, with team members that are willing to push one another to elevate our experiences and reach beyond the goals of our projects. I'm always open to listening to new and exciting ideas. <br /> <br />I embrace experimentation and am eager to explore new possibilities. my fearlessness in trying unfamiliar things consistently leads to the best results.
+            I&apos;m most interested in working on meaningful projects, with team members that are willing to push one another to elevate our experiences and reach beyond the goals of our projects. I&apos;m always open to listening to new and exciting ideas. <br /> <br />I embrace experimentation and am eager to explore new possibilities. my fearlessness in trying unfamiliar things consistently leads to the best results.
           </p>
         </div>
       </section>
