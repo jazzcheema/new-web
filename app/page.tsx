@@ -19,7 +19,7 @@ const LandingPage = () => {
     const timeout = setTimeout(() => {
       setShowButtonArea(true);
       setShowVideo(false);
-    }, 500);
+    }, 1500);
 
     return () => clearTimeout(timeout);
   }, []);
