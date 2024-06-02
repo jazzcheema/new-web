@@ -27,10 +27,10 @@ const Sonnet18 = () => {
           <li>Sometime too hot the eye of heaven shines,</li>
           <li>And often is his gold complexion dimm&apos;d,</li>
           <li>And every fair from fair sometime declines,</li>
-          <li>By chance, or nature's changing course untrimm&apos;d:</li>
+          <li>By chance, or nature&apos;s changing course untrimm&apos;d:</li>
           <li>But thy eternal summer shall not fade,</li>
           <li>Nor lose possession of that fair thou ow&apos;st,</li>
-          <li>Nor shall death brag thou wander'st in his shade,</li>
+          <li>Nor shall death brag thou wander&apos;st in his shade,</li>
           <li>When in eternal lines to time thou grow&apos;st,</li>
           <li>So long as men can breathe, or eyes can see,</li>
           <li>So long lives this, and this gives life to thee.</li>
