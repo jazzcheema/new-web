@@ -4,6 +4,10 @@ import { usePathname } from 'next/navigation';
 import { GlobalAudioProvider, useGlobalAudio } from '@/components/GlobalAudio';
 import GlobalAudio from '@/components/GlobalAudio';
 
+/**
+ * Client layout component to add global audio (without reloading audio) to the application.
+ */
+
 export default function ClientLayout({
   children,
 }: Readonly<{

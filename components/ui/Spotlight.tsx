@@ -6,6 +6,10 @@ type SpotlightProps = {
   fill?: string;
 };
 
+/**
+ * Spotlight component. Found on the Contact page.
+ */
+
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
   return (
     <svg

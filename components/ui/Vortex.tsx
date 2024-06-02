@@ -3,6 +3,10 @@ import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
+/**
+ * Vortex component. This acts like background particles on the initial loading page.
+ */
+
 interface VortexProps {
   children?: any;
   className?: string;

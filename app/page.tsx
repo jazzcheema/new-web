@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { Vortex } from '@/components/ui/Vortex';
 
 /**
- * Landing page -> loads sound and graphics.
+ * Page that appears on load  -> loads sound and graphics.
  */
 
 const LandingPage = () => {

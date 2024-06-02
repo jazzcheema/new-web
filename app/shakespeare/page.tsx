@@ -1,12 +1,15 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Sonnet18 from "@/components/Sonnet18";
 import { SparklesCore } from "@/components/ui/Sparkles";
 
+
+/**
+ * Shakespeare's Sonnet 18 page.
+ */
+
+
 const Shakespeare = () => {
-
-
-
   return (
     <div className="relative w-full h-full overflow-x-hidden">
       <div className="absolute inset-0 z-0">

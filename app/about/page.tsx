@@ -4,6 +4,10 @@ import React from 'react';
 import { SparklesCore } from '@/components/ui/Sparkles';
 import { NavbarDemo } from '@/components/NavBar';
 
+/**
+ * About page. Includes statement.
+ */
+
 const Page = () => {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden p-8">

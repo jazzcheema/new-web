@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * Shakespeare's sonnet 18 HTML to be used on the Shakespeare page.
+ */
+
 const Sonnet18 = () => {
   const handleReturn = () => {
     if (typeof window !== 'undefined') {

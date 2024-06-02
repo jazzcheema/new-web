@@ -1,6 +1,10 @@
 "use client"
 import { createContext, useContext, useEffect, useRef, ReactNode } from 'react';
 
+/**
+ * Global audio component used in the ClientLayout.
+ */
+
 interface GlobalAudioContextType {
   playAudio: () => void;
 }

@@ -3,6 +3,10 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { NavbarDemo } from "@/components/NavBar";
 import Link from "next/link";
 
+/**
+ * Contact page. 
+ */
+
 export default function Contact() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">

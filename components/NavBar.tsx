@@ -4,6 +4,12 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/Navbar
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 
+/**
+ * Implemented Navbar component.
+ *
+ * 
+ */
+
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">

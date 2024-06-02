@@ -1,6 +1,10 @@
-"use client"
+"use client";
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+
+/**
+ * Spinning orb-like object found on the landing page. This button reloads the app.
+ */
 
 const ThreeReloadButton = () => {
   const mountRef = useRef(null);

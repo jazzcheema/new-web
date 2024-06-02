@@ -7,6 +7,20 @@ import { loadSlim } from "@tsparticles/slim";
 import { cn } from "@/utils/cn";
 import { motion, useAnimation } from "framer-motion";
 
+/**
+ * Particle component that can be altered.
+ *
+ * takes in some or all of the following: { id: string;
+  className: string;
+  background: string;
+  particleSize: number;
+  minSize: number;
+  maxSize: number;
+  speed: number;
+  particleColor: string;
+  particleDensity: number;}
+ */
+
 type ParticlesProps = {
   id?: string;
   className?: string;

@@ -2,6 +2,10 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
+/**
+ * Cube (motion) button found on the landing page.
+ */
+
 const ThreeButton = ({ onClick }) => {
   const mountRef = useRef(null);
   const cubeRef = useRef(null);

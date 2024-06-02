@@ -4,7 +4,7 @@ import ThreeButton from "@/components/ui/ThreeButton";
 import ThreeReloadButton from "@/components/ui/ThreeReloadButton";
 
 /**
- * Homepage (start) component
+ * Homepage (start) component. This acts as the landing page once the application is loaded.
  */
 
 export default function Home() {
