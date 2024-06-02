@@ -26,7 +26,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="YouWish"
-              href="#"
+              href="https://github.com/jazzcheema/youwish"
               src="/you-wish-genie.png"
               description="Make 3 wishes to a Youtube API before getting blocked. **This action will stop current audio & redirect"
             />
