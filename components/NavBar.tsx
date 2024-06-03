@@ -12,10 +12,9 @@ import Link from "next/link";
 
 export function NavbarDemo() {
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="relative w-full flex items-center justify-center pb-4">
       <Navbar className="top-2" />
-      <p className="text-black dark:text-white">
-      </p>
+      <p className="text-black dark:text-white"></p>
     </div>
   );
 }
@@ -23,13 +22,11 @@ export function NavbarDemo() {
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-    >
+    <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <Link href="/start" className="text-black dark:text-white">Home</Link>
         <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="projects-grid text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="YouWish"
               href="https://github.com/jazzcheema/youwish"
@@ -42,7 +39,6 @@ function Navbar({ className }: { className?: string }) {
               src="/shakespeare.png"
               description="Shakespeare&apos;s Sonnet #18"
             />
-
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Info">

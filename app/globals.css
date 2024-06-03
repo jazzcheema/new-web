@@ -70,3 +70,8 @@ html {
   font-family: 'DigitalFont2', sans-serif;
 }
 
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

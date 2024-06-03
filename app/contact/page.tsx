@@ -4,7 +4,7 @@ import { NavbarDemo } from "@/components/NavBar";
 import Link from "next/link";
 
 /**
- * Contact page. 
+ * Contact page.
  */
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
         </div>
 
       <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
+        className="-top-40 left-0 md:left-60 md:-top-20 xs:top-40"
         fill="white"
       />
       <div className="p-4 max-w-7xl mx-auto relative z-10  w-full mb-24 pt-10 md:pt-0">
