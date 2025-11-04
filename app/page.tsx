@@ -60,7 +60,7 @@ const LandingPage = () => {
             showButtonArea ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <h3 className='text-xs pb-4'>Ensure you are using the latest browser version for the best performance. xxx</h3>
+          <h3 className='text-xs pb-4'>Ensure you are using the latest browser version for the best performance.</h3>
           <p className="text-white text-xl mb-4">Click start to begin</p>
           <button
             className="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300"
